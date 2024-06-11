@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quiz</title>
+
+    <link rel="shortcut icon" type="x-icon" href="../Image/logo.png">
+	<link rel="stylesheet" href="../CSS/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&family=Dosis:wght@200..800&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Lilita+One&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tajawal:wght@200;300;400;500;700;800;900&family=Teachers:ital,wght@0,400..800;1,400..800&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Lilita+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Lilita+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Lilita+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation bar start -->
+    <header>
+        <a href="#"><img src="../Image/logo.png" alt="logo" class="logo"></a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><i class="fa-solid fa-bars fa-xl" style="color: white;"></i></label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../Index.html">Home</a></li>
+                <li><a href="Disorders.html">Disorders  <i class="fa-solid fa-caret-down" style="color: white;"></i></a>
+                    <ul>
+                        <li><a href="ADHD.html">ADHD</a></li>
+                        <li><a href="Autism.html">Autism</a></li>
+                    </ul>
+                </li>
+                <li><a href="About_Us.html">About Us</a></li>
+                <li><a href="Stories.html">Stories</a><span></span></li>
+                <li><a href="Quiz.html">Personal test</a><span></span></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Navigation bar end -->
+
+<!-- Quiz start -->
+<section class="quiz">
+	<div class="topbar2">
+		<br>
+		<br>
+		<br>
+		<br>
+		<h2 class="h22">Do you have ADHD or Autism?</h2>
+		<h4 class="h44">You can take quizs down below!</h4>
+	</div>
+
+	<section class="Autism">
+		<div class="questions-Autism">
+			<h2>Questions to answer if you want to know if you have Autism!</h2>
+
+			<div class="questions">
+				<h3 class="Red">1. Do you have difficulty sustaining your attention while doing something for work, school, a hobby, or fun activity (e.g., remaining focused during lectures, lengthy reading or conversations)?</h2>
+				<br>
+				<button class="btnY">Yes</button> <button class="btnN">No</button>
+			</div>
+			<br>
+			<br>
+			<div class="questions">
+				<h3 class="Orange">2. Are you easily distracted by external stimuli, like something in your environment or unrelated thoughts?</h2>
+				<br>
+				<button class="btnY">Yes</button> <button class="btnN">No</button>
+			</div>
+			<br>
+			<br>
+			<div class="questions">
+				<h3 class="Blue">3. Do you avoid, dislike, or are reluctant to engage in tasks that require sustained mental effort or thought?</h3>
+				<br>
+				<button class="btnY">Yes</button> <button class="btnN">No</button>
+			</div>
+			<br>
+			<br>
+			<div class="questions">
+				<h3 class="Indigo">4. Do you have trouble listening to someone, even when they are speaking directly to you — like your mind is somewhere else?</h2>
+				<br>
+				<button class="btnY">Yes</button> <button class="btnN">No</button>
+			</div>
+			<br>
+			<br>
+			<div class="questions">
+				<h3 class="Yellow">5. Do you have difficulty in organizing an activity or task needing to get done (e.g., poor time management, failing to meet deadlines, difficulty managing sequential tasks)?</h2>
+				<br>
+				<button class="btnY">Yes</button> <button class="btnN">No</button>
+			</div>
+			<br>
+			<br>
+			<div class="questions">
+				<h3 class="Green">6. Do you fail to give close attention to details, or make careless mistakes in things such as schoolwork, at work, or during other activities?</h2>
+				<br>
+				<button class="btnY">Yes</button> <button class="btnN">No</button>
+			</div>
+			<br>
+			<br>
+			<div class="questions">
+				<h3 class="Purple">7. You forget to do something you do all the time, such as missing an appointment or paying a bill?</h2>
+				<br>
+				<button class="btnY">Yes</button> <button class="btnN">No</button>
+			</div>
+			<br>
+			<br>
+			<div class="questions">
+				<h3 class="Pink">8. Do you lose, misplace or damage something that's necessary in order to get things done (e.g., your phone, eyeglasses, paperwork, wallet, keys, etc.)?</h2>
+				<br>
+				<button class="btnY">Yes</button> <button class="btnN">No</button>
+			</div>
+			<br>
+			<br>
+			<div class="mark-section">
+				<p>If you answer "Yes" to 1 to 4 questions it is quite normal to have some of the symptoms, if you answer "Yes" to 5 to 8 questions you might have Autism and get check with a professional for a more a accurate result.</p>
+			</div>
+			<br>
+			<br>
+			<div class="warning">
+				<p>!These questions are not 100% accurate so if you want a more details and accurate result you can take a test with a professional or doctors.!</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="ADHD">
+		<div class="questions-ADHD">
+			<h2>Questions to answer if you have ADHD</h2>
+
+			<div class="questions">
+				<h3 class="Red">1. Do you like to do things the same way?</h2>
+				<br>
+				<button class="btnY">Yes</button> <button class="btnN">No</button>
+			</div>
+			<br>
+			<br>
+			<div class="questions">
+				<h3 class="Orange">2. You would prefer hanging out alone than going to parties with friends?</h2>
+				<br>
+				<button class="btnY">Yes</button> <button class="btnN">No</button>
+			</div>
+			<br>
+			<br>
+			<div class="questions">
+				<h3 class="Blue">3. I tend to notice small details that others don’t.</h3>
+				<br>
+				<button class="btnY">Yes</button> <button class="btnN">No</button>
+			</div>
+			<br>
+			<br>
+			<div class="questions">
+				<h3 class="Indigo">4. When I’m reading a story, I have a hard time imagining what the characters might look like or figuring out the character's intentions.</h2>
+				<br>
+				<button class="btnY">Yes</button> <button class="btnN">No</button>
+			</div>
+			<br>
+			<br>
+			<div class="questions">
+				<h3 class="Yellow">5. I frequently find it hard to keep a conversation going.</h2>
+				<br>
+				<button class="btnY">Yes</button> <button class="btnN">No</button>
+			</div>
+			<br>
+			<br>
+			<div class="questions">
+				<h3 class="Green">6. I tend to have very strong interests and get upset if I can’t pursue them.</h3></h2>
+				<br>
+				<button class="btnY">Yes</button> <button class="btnN">No</button>
+			</div>
+			<br>
+			<br>
+			<div class="questions">
+				<h3 class="Purple">7. I often notice small sounds others don’t.</h2>
+				<br>
+				<button class="btnY">Yes</button> <button class="btnN">No</button>
+			</div>
+			<br>
+			<br>
+			<div class="questions">
+				<h3 class="Pink">8. New situations make me anxious or nervous.</h2>
+				<br>
+				<button class="btnY">Yes</button> <button class="btnN">No</button>
+			</div>
+			<br>
+			<br>
+
+			<div class="mark-section">
+				<p>If you answer "Yes" to 1 to 4 questions it is quite normal to have some of the symptoms, if you answer "Yes" to 5 to 8 questions you might have ADHD and get check with a professional for a more a accurate result.</p>
+			</div>
+
+			<div class="warning">
+				<p>!These questions are not 100% accurate so if you want a more details and accurate result you can take a test with a professional or doctors.!</p>
+			</div>
+		</div>
+	</section>
+</section>
+<!-- Quiz End -->
+
+<!-- Footer start -->
+<footer class="distribute">
+	<div class="left">
+		<h3>Special<span>Zone</span></h3>
+
+		<p class="links">
+			<a href="../Index.html">Home</a>
+			│
+			<a href="Disorders.html">Disorders</a>
+			│
+			<a href="About_Us.html">About Us</a>
+			│
+			<a href="Stories.html">Stories</a>
+			│
+			<a href="Quiz.html">Personal test</a>
+			│
+		</p>
+
+		<p class="com-name">
+			Copyright &#169; 2024 <strong>Special Zone</strong> All right reserved
+		</p>
+	</div>
+
+	<div class="center">
+		<div>
+			<i class="fa-solid fa-location-dot"></i>
+			<p><span>Myanmar</span>
+			Yangon, North Okkalapa Township</p>
+		</div>
+		<div>
+			<i class="fa-solid fa-phone"></i>
+			<p>+95 99834567</p>
+		</div>
+		<div>
+			<i class="fa-solid fa-envelope"></i>
+			<p><a href="#">room3@gmail.com</a></p>
+		</div>
+	</div>
+
+	<div class="right">
+		<p class="about">
+			<span>About our website</span>
+			<strong>Special Zone</strong> is a website which was created to spread awareness and educate people about ADHD and Autism.
+            <br>
+            <br>
+            <br>
+            <br>
+            <span>Citation</span>
+            <a href="../Web PBL(Y7 Indigo)Room-3.docx" style="color: white;">Web PBL(Y7 Indigo)Room-3</a>
+        </p>
+		<div class="icons">
+			<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+			<a href="#"><i class="fa-brands fa-facebook"></i></a>
+			<a href="#"><i class="fa-brands fa-discord"></i></a>
+			<a href="#"><i class="fa-brands fa-instagram"></i></a>
+		</div>
+	</div>
+	</footer>
+<!-- Footer end -->	
+</body>
+</html>

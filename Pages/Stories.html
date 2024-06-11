@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stories</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&family=Dosis:wght@200..800&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Lilita+One&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&family=Dosis:wght@200..800&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Lilita+One&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&family=Dosis:wght@200..800&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Lilita+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="x-icon" href="../Image/logo.png">
+	<link rel="stylesheet" href="../CSS/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Lilita+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- Navigation bar start -->
+    <header>
+        <a href="#"><img src="../Image/logo.png" alt="logo" class="logo"></a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><i class="fa-solid fa-bars fa-xl" style="color: white;"></i></label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../Index.html">Home</a></li>
+                <li><a href="Disorders.html">Disorders  <i class="fa-solid fa-caret-down" style="color: white;"></i></a>
+                    <ul>
+                        <li><a href="ADHD.html">ADHD</a></li>
+                        <li><a href="Autism.html">Autism</a></li>
+                    </ul>
+                </li>
+                <li><a href="About_Us.html">About Us</a></li>
+                <li><a href="Stories.html">Stories</a><span></span></li>
+                <li><a href="Quiz.html">Personal test</a><span></span></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Navigation bar end -->
+
+<!-- Stories start -->
+<!--Testimonials------------------->
+<section id="testimonials">
+
+    <!--heading--->
+    <div class="testimonial-heading">
+        <h1>Stories and experience of people with ADHD and Autism</h1>
+    </div>
+
+    <!--testimonials-box-container------->
+    <div class="testimonial-box-container">
+        
+        <!--BOX-1---------->
+        <div class="testimonial-box">
+           <!--top-----------------------------> 
+           <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img">
+                        <img src="../Image/pfp2.jpg">
+                    </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>Leo's star</strong>
+                        <span>Joined since 2021</span>
+                    </div>
+                </div>
+           </div>
+           <!--Comments------------>
+           <div class="client-comment">
+            <p>The sensory gaslighting is literally my mother. My parents and I went to watch a football game to the stadium, and so I got nervous and brought two type of headphones, ones to listen to music if needed and ones that didn't work but we're like, the ones that covers your ears to block the noise And after arriving I checked time later the bag pack I was carrying to find out the ones for the sound were not there, I told my mother, really nervous (there was already a lot of people in the streets and talking and laughing loud etc) So, when I told her and she said she put them away 'cause I didn't need them I got mad but still explained (kind of overwhelmed at this point) And she just had an almost amused face and literally laughed at me Which evidently made even more mad.</p>
+           </div>
+        </div>
+
+        <!--BOX-2---------->
+        <div class="testimonial-box">
+            <!--top-----------------------------> 
+            <div class="box-top">
+                  <!--profile----->
+                 <div class="profile">
+                     <!--img---->
+                     <div class="profile-img">
+                         <img src="../Image/pfp3.jpg">
+                     </div>
+                     <!--name-and-username-->
+                     <div class="name-user">
+                         <strong>GOTHIC</strong>
+                         <span>Joined since 2020</span>
+                     </div>
+                 </div> 
+            </div>
+            <!--Comments------------>
+            <div class="client-comment">
+             <p>I have never been diagnosed but im pretty sure I have autism. when I was younger and couldn't hide my meltdowns till I got to somewhere away from others I wouldn't have them in class in elementary school. the AP would be called and I would be grabbed and dragged to the principals office and put in the iss room and locked in there until I stopped. sometimes the counselor would be called in to talk to me and if I told her I had a
+                meltdown she would get angry. does that count as bad intervention?</p>
+            </div>
+         </div>
+
+         <!--BOX-3---------->
+        <div class="testimonial-box">
+            <!--top-----------------------------> 
+            <div class="box-top">
+                 <!--profile----->
+                 <div class="profile">
+                     <!--img---->
+                     <div class="profile-img">
+                         <img src="../Image/pfp4.jpg">
+                     </div>
+                     <!--name-and-username-->
+                     <div class="name-user">
+                         <strong>Brianna</strong>
+                         <span>Joined since 2023</span>
+                     </div>
+                 </div>
+            </div>
+            <!--Comments------------>
+            <div class="client-comment">
+             <p>For example, when i am sad, i physically cannot talk. sometimes, i may become extremely happy or bounce, waving my arms around. people often look at me funny. i really hate noise and when people misunderstand autism. i barely talk to people i know. i cant handle my emotions very well. i may also make weird noises. have days that I have all these things to say but when I say them out loud they come out the wrong way. my creativity is out of this world but so is my anxiety!! i always wonder when I talk to people and their facial expression changes if I made them mad. I always wonder if I said something online that to me sounded fine but someone else was offended and I have absolutely no idea what I said that was offensive! our society isnt made for us sadly and I don't think that will ever change!</p>
+            </div>
+         </div>
+
+         <!--BOX-4---------->
+        <div class="testimonial-box">
+            <!--top-----------------------------> 
+            <div class="box-top">
+                 <!--profile----->
+                 <div class="profile">
+                     <!--img---->
+                     <div class="profile-img">
+                         <img src="../Image/pfp1.jpg">
+                     </div>
+                     <!--name-and-username-->
+                     <div class="name-user">
+                         <strong>GreatMateState</strong>
+                         <span>Joined since 2024<b>(New)</b></span>
+                     </div>
+                 </div>
+            </div>
+            <!--Comments------------>
+            <div class="client-comment">
+             <p> Also I feel like nobody loves me, I’m always friendly and I made a few friends but when I want to be myself they just ignore me and now I feel like I’m back at square one. I know I talk when I’m not supposed to, I know I may say offensive things and I’m sorry I’m just trying to joke around, I know I may seem annoying or closed off or too hyper. But all I want is a friend, and it’s so hard to just keep one.</p>
+            </div>
+         </div>
+    </div>
+
+</section>
+<!-- Story end -->
+
+<!-- Footer start -->
+<footer class="distribute">
+	<div class="left">
+		<h3>Special<span>Zone</span></h3>
+
+		<p class="links">
+			<a href="../Index.html">Home</a>
+			│
+			<a href="Disorders.html">Disorders</a>
+			│
+			<a href="About_Us.html">About Us</a>
+			│
+			<a href="Stories.html">Stories</a>
+			│
+			<a href="Quiz.html">Personal test</a>
+			│
+		</p>
+
+		<p class="com-name">
+			Copyright &#169; 2024 <strong>Special Zone</strong> All right reserved
+		</p>
+	</div>
+
+	<div class="center">
+		<div>
+			<i class="fa-solid fa-location-dot"></i>
+			<p><span>Myanmar</span>
+			Yangon, North Okkalapa Township</p>
+		</div>
+		<div>
+			<i class="fa-solid fa-phone"></i>
+			<p>+95 99834567</p>
+		</div>
+		<div>
+			<i class="fa-solid fa-envelope"></i>
+			<p><a href="#">room3@gmail.com</a></p>
+		</div>
+	</div>
+
+	<div class="right">
+		<p class="about">
+			<span>About our website</span>
+			<strong>Special Zone</strong> is a website which was created to spread awareness and educate people about ADHD and Autism.
+            <br>
+            <br>
+            <br>
+            <br>
+            <span>Citation</span>
+            <a href="../Web PBL(Y7 Indigo)Room-3.docx" style="color: white;">Web PBL(Y7 Indigo)Room-3</a>
+        </p>
+		<div class="icons">
+			<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+			<a href="#"><i class="fa-brands fa-facebook"></i></a>
+			<a href="#"><i class="fa-brands fa-discord"></i></a>
+			<a href="#"><i class="fa-brands fa-instagram"></i></a>
+		</div>
+	</div>
+	</footer>
+<!-- Footer end -->	
+</body>
+</html>
